@@ -1,0 +1,29 @@
+Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti delle auto usate 
+messe in vendita da un concessionario.
+
+ID - BIGINT - UNIQUE, NOT_NULL - PRIMARY_KEY
+
+Marca - VARCHAR(15) - NOT_NULL
+Modello - VARCHAR(15) - NOT_NULL
+Colore - *CHAR(3) - NOT_NULL
+Condizioni - *CHAR(1) - NOT_NULL
+Foto - VARCHAR - NOT_NULL
+
+Anno_immatricolazione - YEAR - NOT_NULL
+Km_percorsi - DOUBLE(8,2) - NOT_NULL
+
+Carburante - CHAR(8) - NOT_NULL - INDEX
+Cambio - *CHAR(1) - NOT_NULL
+Marce - CHAR(1) - NOT_NULL
+Potenza - VARCHAR(15) - NULL
+Posti - CHAR(1) - NOT_NULL
+Porte - CHAR(1) - NOT_NULL
+Cilindri - CHAR(1) - NULL
+Peso_a_vuoto - VARCHAR(6) - NULL
+Classe_emissioni - VARCHAR(10) - NULL
+
+Prezzo - DOUBLE(9,2) - NOT_NULL
+
+--- Legenda ---
+*CHAR - Immagino che si crei prima una tabella con indicazioni in codice che si riferiscano 
+al colore, le condizioni, il tipo di cambio.
